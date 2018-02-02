@@ -6,8 +6,12 @@ object RemoveSpaces extends App {
 
   val textInput = StdIn.readLine("Enter your text: ")
 
-  val newtext = textInput.replaceAll(" ", "")
+  println(replace(textInput))
 
-  println(s"Your text with no spaces is $newtext")
+  def replace(newText : String) = {
+    newText.replaceAll(" ", "")
+
+  }
 
 }
+
